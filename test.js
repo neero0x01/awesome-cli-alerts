@@ -3,20 +3,20 @@ const alert = require('./index.js');
 alert();
 alert({
   type: `success`,
-  msg: `All done`,
-  name: `Done`
+  msg: `Yeayy! DB Connected`,
+  name: `DATABASE`
 });
 alert({
   type: `warning`,
-  msg: `something's off`
+  msg: `You're importing useEffect but not using it... `
 });
 alert({
   type: `error`,
-  msg: `something bad happened`
+  msg: `Get Request Failed`
 });
 alert({
   type: `info`,
-  msg: `You're awesome!`
+  msg: `Your code can be optimized`
 });
 
 

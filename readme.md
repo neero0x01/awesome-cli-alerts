@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-npm install cli-alerts
+npm install awesome-cli-alerts
 ```
 
 <br>
