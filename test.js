@@ -1,7 +1,22 @@
 const alert = require('./index.js');
 
+alert();
 alert({
-	type: 'success',
-	msg: "SUCCESS Everything's fine"
+  type: `success`,
+  msg: `All done`
 });
-//  ✔ SUCCESS: Everything's fine
+alert({
+  type: `warning`,
+  msg: `something's off`
+});
+alert({
+  type: `error`,
+  msg: `something bad happened`
+});
+alert({
+  type: `info`,
+  msg: `You're awesome!`
+});
+
+
+

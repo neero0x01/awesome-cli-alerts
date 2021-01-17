@@ -26,5 +26,9 @@
 	"scripts": {
 		"test": "node test.js",
 		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"chalk": "^4.1.0",
+		"log-symbols": "^4.0.0"
 	}
 }
