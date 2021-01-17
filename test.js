@@ -3,7 +3,8 @@ const alert = require('./index.js');
 alert();
 alert({
   type: `success`,
-  msg: `All done`
+  msg: `All done`,
+  name: `Done`
 });
 alert({
   type: `warning`,

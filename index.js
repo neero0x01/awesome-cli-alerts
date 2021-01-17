@@ -23,21 +23,23 @@ const blueI = chalk.blue.inverse;
 module.exports = (options) => {
   const defaultOptions = {
     type: `error`,
-    msg: `You forgot to define all options`
+    msg: `You forgot to define all options`,
+    name: ``
   };
   const opts = {...defaultOptions, ...options};
-  const {type, msg} = opts;
+  const {type, msg, name} = opts;
 
+  const printName = name ? name: type.toUpperCase();
   if(type === `success`) {
-    console.log(`\n${symbols.success} ${greenI(` WARNING `)}  ${green(msg)}}\n`);
+    console.log(`\n${symbols.success} ${greenI(` ${printName} `)}  ${green(msg)}\n`);
   }
   if(type === `error`) {
-    console.log(`\n${symbols.error} ${redI(` ERROR `)}  ${red(msg)}\n`);
+    console.log(`\n${symbols.error} ${redI(` ${printName} `)}  ${red(msg)}\n`);
   }
   if(type === `warning`) {
-    console.log(`\n${symbols.warning} ${orangeI(` WARNING `)}  ${orange(msg)}\n`);
+    console.log(`\n${symbols.warning} ${orangeI(` ${printName} `)}  ${orange(msg)}\n`);
   }
   if(type === `info`) {
-    console.log(`\n${symbols.info} ${blueI(` INFO `)}  ${blue(msg)}\n`);
+    console.log(`\n${symbols.info} ${blueI(` ${printName} `)}  ${blue(msg)}\n`);
   }
 }
