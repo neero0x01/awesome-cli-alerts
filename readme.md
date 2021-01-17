@@ -1,5 +1,8 @@
 # awesome-cli-alerts
+![📟](./.github/alerts.png)
 
+
+[![📟](./.github/install.png)]
 ## Install
 
 ```sh
@@ -7,6 +10,7 @@ npm install awesome-cli-alerts
 ```
 
 <br>
+<img src="./.github/usage.png">
 
 ## Usage
 
@@ -16,6 +20,10 @@ const alert = require('awesome-cli-alerts');
 // privide the message type and msg
 alert({type: 'success', msg: 'Everything\'s fine'});
 // prints: ✔ SUCCESS Everything's fine
+
+// privide the message type and msg
+alert({type: 'success', msg: 'Everything\'s fine', name: 'DB'});
+// prints: ✔ DB Everything's fine
 
 alert({type: 'info', msg: 'I am new to Open Source!!'});
 // Prints: ⚠ INFO I am new to Open Source!!

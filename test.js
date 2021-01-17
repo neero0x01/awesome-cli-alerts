@@ -1,6 +1,7 @@
 const alert = require('./index.js');
 
-alert();
+// alert();
+
 alert({
   type: `success`,
   msg: `Yeayy! DB Connected`,
@@ -18,6 +19,10 @@ alert({
   type: `info`,
   msg: `Your code can be optimized`
 });
+console.log('\n\n\n\n\n\n\n\n\n\n\n\n');
+console.log('\n\n\n\n\n\n\n\n\n');
+
+
 
 
 
