@@ -1,6 +1,6 @@
 {
 	"name": "awesome-cli-alerts",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Cross platform CLI Alerts with colors and symbols suport for success, info, warnin and errors. Works on MacOS, Linux and Windows",
 	"main": "index.js",
 	"repository": {
