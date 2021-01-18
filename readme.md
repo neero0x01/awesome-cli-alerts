@@ -17,11 +17,11 @@ npm install awesome-cli-alerts
 ```js
 const alert = require('awesome-cli-alerts');
 
-// privide the message type and msg
+// provide the message type and msg
 alert({type: 'success', msg: 'Everything\'s fine'});
 // prints: ✔ SUCCESS Everything's fine
 
-// privide the message type and msg
+// provide the message type and msg
 alert({type: 'success', msg: 'Everything\'s fine', name: 'DB'});
 // prints: ✔ DB Everything's fine
 
